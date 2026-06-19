@@ -74,7 +74,7 @@
           <li><a class="nav-link scrollto" href="#evaluation">Evaluation</a></li>
           <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
           <li><a class="nav-link scrollto" href="#timeline">Timeline</a></li>
-          <li><a class="nav-link scrollto" href="#leaderboard">Results</a></li>
+          <li><a class="nav-link scrollto" href="#leaderboard">Leaderboard</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <!--<li><a class="nav-link scrollto" href="./submission.html">Submission</a></li>-->
           <li>
@@ -161,9 +161,10 @@
                   .timeline-list-new a { font-weight: bold; text-decoration: underline; }
                 </style>
                 <li style="margin: 0.8em 0;">
-                  <strong>2026-06-18(New!):</strong> The leaderboard will open at AOE time 23:59 on June 18! We
-                  provide four leaderboards covering 2 tasks under 2 tracks respectively. Check the
-                  <strong><a href="#leaderboard" class="scrollto" style="text-decoration: underline;">Results</a></strong> section for details.
+                  <strong>2026-06-19:</strong> The Leaderboard is Now Officially Open! The official evaluation leaderboard will remain open for a total of 8 days. Please note that each track and task features its own independent leaderboard and prize pool. Participants can now proceed to the <a href="#leaderboard" class="scrollto">Leaderboard</a> page to access the submission links and review the detailed evaluation rules.
+                </li>
+                <li style="margin: 0.8em 0;">
+                  <strong>2026-06-19:</strong> Update on Task 2 (SLU) Test Set Data: We have successfully updated the Spoken Language Understanding (SLU) test set by completing the missing Question IDs for all QA pairs. All participating teams are required to pull the latest version of the dataset immediately to ensure that our scoring system can correctly parse and evaluate your submission format.
                 </li>
                 <li style="margin: 0.8em 0;">
                   <strong>2026-06-13:</strong> The test data has been officially released! 
@@ -941,26 +942,38 @@
     <section id="leaderboard" class="leaderboard">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Results</h2>
+          <h2>LEADERBOARD</h2>
         </div>
         <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
             <p style="margin-bottom: 1.5em;">
-              <strong>Note on Task 2 (SLU):</strong> Task 2 is divided into two phases. <strong>Phase 1</strong>
-              evaluates on the full test set data that has been released. <strong>Phase 2</strong> supplements
-              additional QA data on top of the Phase 1 data for further evaluation. Phase 2 will open at
-              <strong>AOE time 23:59 on June 24</strong>.
+              The official leaderboards are now open for a total of 8 days.
+              For this challenge, each task (TSA-ASR and SLU) under Track 1 and Track 2 is completely independent.
+              The final rankings for each task will be calculated independently, and challenge prizes will be distributed separately.
+              Please double-check and submit your results via the dedicated portals for the corresponding tasks.
+              For submission procedures, packaging rules, and format examples, please refer to the detailed guidelines on each respective Leaderboard page.
             </p>
 
-            <h4 style="margin-bottom: 1em;">Leaderboards</h4>
+            <h4 style="margin-bottom: 1em;">📍 Submission Portals</h4>
+            <p style="margin-bottom: 0.5em;"><strong>Track 1: Dyadic Dialogue Understanding</strong></p>
             <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 2.2;">
-              <li>🔗 <a href="#">Track 1 — Task 1 (TSA-ASR)</a></li>
-              <li>🔗 <a href="#">Track 1 — Task 2 Phase 1 (SLU)</a></li>
-              <li>🔗 <a href="#">Track 1 — Task 2 Phase 2 (SLU)</a></li>
-              <li>🔗 <a href="#">Track 2 — Task 1 (TSA-ASR)</a></li>
-              <li>🔗 <a href="#">Track 2 — Task 2 Phase 1 (SLU)</a></li>
-              <li>🔗 <a href="#">Track 2 — Task 2 Phase 2 (SLU)</a></li>
+              <li>🔗 <a href="https://www.codabench.org/competitions/17161/" target="_blank" rel="noopener noreferrer">Task 1 (TSA-ASR)</a></li>
+              <li>🔗 <a href="https://www.codabench.org/competitions/17162/" target="_blank" rel="noopener noreferrer">Task 2 (SLU) Phase 1</a></li>
             </ul>
+            <p style="margin-bottom: 0.5em;"><strong>Track 2: Multi-Party Meeting Understanding</strong></p>
+            <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 2.2;">
+              <li>🔗 <a href="https://www.codabench.org/competitions/17170/" target="_blank" rel="noopener noreferrer">Task 1 (TSA-ASR)</a></li>
+              <li>🔗 <a href="https://www.codabench.org/competitions/17171/" target="_blank" rel="noopener noreferrer">Task 2 (SLU) Phase 1</a></li>
+            </ul>
+
+            <h4 style="margin-bottom: 1em; margin-top: 1.8em;">⚠️ Important Evaluation Instructions for Task 2 (SLU)</h4>
+            <p style="margin-bottom: 1em;">To ensure fairness and scientific rigor, Task 2 adopts a two-phase evaluation mechanism and requires the latest data format:</p>
+            <ol style="font-size: 1.05rem; line-height: 2; padding-left: 1.2em;">
+              <li><strong>Data Update Requirement:</strong> You must use the latest test set data, which now includes the complete Question IDs, for inference and result formatting.
+                <a href="https://drive.google.com/file/d/1B5Db2e8nNtorSk3BKWucxLTjuCSyX4pH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">[Download Link]</a></li>
+              <li><strong>Phase 1 (First 6 Days):</strong> Evaluation is based on the current question bank containing complete Question IDs. Leaderboard scores during this phase serve only as a periodic reference and will not be counted toward the final ranking.</li>
+              <li><strong>Phase 2 (Last 2 Days):</strong> The organizing committee will release the final batch of brand-new QA questions, which will be merged with the Phase 1 data to form the complete question bank. At that time, the supplemental QA data and the specific submission links for Phase 2 will be available directly on the Phase 1 Leaderboard pages linked above. This website will also be updated accordingly. The test scores from this phase (i.e., on the complete question bank) will serve as the sole criterion for the final ranking of the SLU task.</li>
+            </ol>
           </div>
         </div>
       </div>
