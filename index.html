@@ -75,6 +75,7 @@
           <li><a class="nav-link scrollto" href="#registration">Registration</a></li>
           <li><a class="nav-link scrollto" href="#timeline">Timeline</a></li>
           <li><a class="nav-link scrollto" href="#leaderboard">Leaderboard</a></li>
+          <li><a class="nav-link scrollto" href="#requirements">Requirements</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <!--<li><a class="nav-link scrollto" href="./submission.html">Submission</a></li>-->
           <li>
@@ -983,7 +984,91 @@
 
 
 
-    <!-- ======= FAQ Section ======= -->
+    <!-- ======= Requirements for Final Submission Section ======= -->
+    <section id="requirements" class="requirements section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Requirements for Final Submission</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+
+            <p style="margin-bottom: 1.5em;">
+              To ensure the fairness, academic rigor, and integrity of this challenge, all teams intending to be eligible for the final ranking and awards are required to submit their system description paper and corresponding reproducibility materials in accordance with the schedule and requirements specified below.
+            </p>
+
+            <h3 class="h5 fw-bold mb-4" style="color: #1f4385;">1. System Description Paper Submission <span style="font-weight: normal; color: #e74c3c;">(Required for All Teams)</span></h3>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Submission Deadline</p>
+              <p>July 3, 2026 (AOE Time)</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Submission Method</p>
+              <p>Please submit your paper in PDF format to our official emails: <a href="mailto:gdh@mail.nwpu.edu.cn">gdh@mail.nwpu.edu.cn</a>.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Content Requirements</p>
+              <p>Each team must submit a comprehensive system description paper, elaborating on the datasets used, model architecture, data processing strategies, training details, and core technical optimizations of your solution.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Format &amp; Review Policy</p>
+              <p>The paper follows a strict <strong>3+1 page format</strong> (up to 3 pages for the main content and 1 page for references) and adopts a <strong>single-blind review process</strong>. Please prepare your manuscript using the official IEEE SLT 2026 author templates.
+                <br>Official SLT 2026 templates: <a href="https://attend.ieee.org/slt-2026/authors-instructions/" target="_blank" rel="noopener noreferrer">https://attend.ieee.org/slt-2026/authors-instructions/</a></p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Multi-Task Submission Instructions</p>
+              <p>If your team participates in multiple tasks, you may either integrate all solutions into a single consolidated system description paper or submit independent papers for each task. Please note that if separate papers are submitted, each manuscript must present distinct and differentiated content (e.g., focusing on task-specific technical strategies and innovations). Highly redundant or substantially duplicate content across multiple submissions is strictly prohibited.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Recommendation for SLT Official Conference Papers</p>
+              <p>The organizing committee will conduct a comprehensive assessment of all submitted system description papers. Beyond the top-ranked teams, solutions that demonstrate notable innovations in model architecture, multimodal processing, or data augmentation will be highly recommended. These teams will be invited to submit their work as a Challenge paper to IEEE SLT 2026.
+                <br><strong>SLT 2026 official paper submission deadline: July 8, 2026 (AOE Time)</strong></p>
+            </div>
+
+            <h3 class="h5 fw-bold mt-5 mb-4" style="color: #1f4385;">2. Docker Reproducibility Submission <span style="font-weight: normal; color: #e74c3c;">(Required for Top 5 Teams per Task)</span></h3>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Submission Deadline</p>
+              <p>July 1, 2026 (AOE Time)</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Submission Method</p>
+              <p>Please send a publicly accessible Docker image link (hosting on <strong>DockerHub</strong> is highly recommended) to our official emails: <a href="mailto:gdh@mail.nwpu.edu.cn">gdh@mail.nwpu.edu.cn</a> to support full inference reproducibility.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="fw-bold mb-1">Docker Image Specifications</p>
+              <ul style="padding-left: 1.2em;">
+                <li><strong>Environment Consistency:</strong> The image must contain all necessary runtime environments, software libraries, model weights, and dependencies. It must run independently and seamlessly in the official evaluation environment without requiring any additional network downloads or manual configurations.</li>
+                <li><strong>One-Click Inference:</strong> A standard automated execution script must be pre-configured in the image. The script must automatically execute the full pipeline from raw audio input to model inference and generate final output files strictly conforming to the officially required format.</li>
+                <li><strong>Usage Documentation:</strong> A clear README.md file must be included, detailing how to pull the image, mount the local data directory, and run the one-click inference command, ensuring the organizing committee can reproduce your results smoothly.</li>
+              </ul>
+            </div>
+
+            <h3 class="h5 fw-bold mt-5 mb-4" style="color: #1f4385;">3. Official Evaluation &amp; Compliance Statement</h3>
+
+            <div class="faq-item">
+              <p>Upon receiving the Docker images from the Top 5 teams, the organizing committee will conduct an independent replication and evaluation on the internal hidden test set.</p>
+              <p>If any non-compliant behaviors are detected during official replication (including but not limited to violating model parameter constraints, unauthorized use of closed-source data, manual intervention during inference, etc.), or if there is an unreasonably large discrepancy between the official reproduced score on the hidden set and the team's leaderboard result (indicating potential academic misconduct), the organizing committee will launch an internal review process. Following deliberation, the organizing committee reserves the absolute right to <strong>nullify the results of non-compliant teams, adjust the final rankings, and revoke their challenge and award eligibility</strong>.</p>
+              <p>All final rankings and awards are subject to the official results published on the challenge website.</p>
+              <p style="margin-top: 1em;">If you have any questions regarding the submission requirements, please contact us via our official emails (<a href="mailto:gdh@mail.nwpu.edu.cn">gdh@mail.nwpu.edu.cn</a>) at any time.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- ======= FAQ Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
